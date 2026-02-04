@@ -12,15 +12,22 @@ This repository is for the Winter Lab CS336 Assignment 1. The project uses `uv` 
 - Python >= 3.12
 - `uv`
 - Jupyter
+- Tested on WSL (this repository assumes a WSL environment).
 
 ## Quick Start
-1. Install dependencies (creates a virtual environment on first run):
+1. Install `uv`:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+2. Install dependencies (creates a virtual environment on first run):
 
 ```bash
 uv sync
 ```
 
-2. Launch Jupyter (Lab recommended):
+3. Launch Jupyter (Lab recommended):
 
 ```bash
 uv run jupyter lab

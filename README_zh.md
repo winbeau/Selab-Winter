@@ -12,15 +12,22 @@
 - Python >= 3.12
 - `uv`
 - Jupyter
+- 已在 WSL 环境下验证（本仓库默认基于 WSL 实现）。
 
 ## 快速开始
-1. 安装依赖（首次会创建虚拟环境）：
+1. 安装 `uv`：
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+2. 安装依赖（首次会创建虚拟环境）：
 
 ```bash
 uv sync
 ```
 
-2. 启动 Jupyter（推荐 Lab）：
+3. 启动 Jupyter（推荐 Lab）：
 
 ```bash
 uv run jupyter lab
